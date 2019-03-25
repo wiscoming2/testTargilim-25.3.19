@@ -1,0 +1,31 @@
+<html>
+    <head>
+            <title>html rocks!!</title>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"> </script> 
+    </head>
+    <body>
+            <p>number <input type="number" id="num"/></p>
+            <button onclick="ifrishoni()">rishoni?</button>
+            <img src="" id="rishoni">
+            <br>
+    </body>
+    <script>
+        function ifrishoni()
+        {
+            var x = parseInt($('#num').val())
+            var f = 2
+            while(x % f != 0)
+             {
+               f++
+             }
+            if(f == x)
+             {
+             $("#rishoni").attr("src" , "download.png")
+             }
+            else
+             {
+             $("#rishoni").attr("src" , "lorishoni.jpg")
+             }
+        }
+    </script>
+</html>
